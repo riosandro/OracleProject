@@ -1,0 +1,48 @@
+<meta charset="UTF -8">
+
+<h3>Mostrar la puntuacion de un equipo de futbol en un aliga! </h3>
+
+<script>
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function imprimir(msg) {
+		document.write(msg);
+		saltarLinea();
+	}
+	//Estas ds lineas de codigos no nos sirven para hacer operaciones matematicas como muestro en la variable 'resultado' porque la funcion 'prompt' recibe y devuelve un string, entonces lo que hace es concartenar un numero y no mostrar el resultado de la operacion.
+	//var ganados = prompt("Ingrese la cantidad de partidos ganados por el equipo: ");
+	//var empatados = prompt("Ingrese l cantidad de partidos empatados por el equipo: ");
+
+	var ganados = parseInt(prompt("Ingrese la cantidad de partidos ganados por el equipo: "));
+	var empatados = parseInt(prompt("Ingrese l cantidad de partidos empatados por el equipo: "));
+
+	var puntajeahoanterior = 16;
+
+	var puntageganados = 3;
+	var resultado = (ganados * puntageganados + empatados);
+
+	if(resultado > puntajeahoanterior){
+		imprimir("El puntage del equipo es de " +resultado+ " puntos, comparado con el aho pasado estamos mucho mejor." );
+
+	}
+		if(resultado < puntajeahoanterior){
+		imprimir("El puntage del equipo es de " +resultado+ " puntos, comparado con el aho pasado estamos mucho peor." );
+	}
+	else{
+
+		imprimir("El puntage del equipo es de " +resultado+ " puntos, comparado con el aho pasado estamos igual." );
+	}
+	
+	
+
+
+
+
+
+
+
+
+
+</script>

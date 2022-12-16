@@ -1,0 +1,30 @@
+<meta charset="UTF -8">
+
+<h3>Programa para calcular cuantos mundiales de la FIFA han haido </h3>
+
+<script>
+	
+function saltarLinea() {
+	document.write("<br>");
+	document.write("<br>");
+}
+function imprimir(msg) {
+	document.write(msg);
+	saltarLinea();
+}
+
+var iniciomundiales = 1930;
+var limite = parseInt(prompt("Ingrese el ano limite para calcular: "));
+var cantidadmundiales = (limite - iniciomundiales)/ 4 +1;
+   
+
+while(iniciomundiales <= limite){
+	//alert("Hubo mundial de la FIFA en en ano "+ iniciomundiales);
+      imprimir("Hubo mundial de la FIFA en en ano "+ iniciomundiales);
+	  iniciomundiales = iniciomundiales + 4;
+}
+imprimir("Por total han habido "+ cantidadmundiales+ " mundiales desde " +iniciomundiales+ " hasta el ano "+ limite)
+
+imprimir ("Fin!");
+
+</script>

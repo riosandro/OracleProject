@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+	
+var gasolina = 40;
+var klm = 480;
+var alcohol = 40;
+var klm2 = 300;
+
+var carrogas = klm / gasolina;
+var carroalcoh = klm2 / alcohol;
+
+var saltolinea = "<br><br>";//Se pueden usar todos los saltos de linea que queramos en una sola varables
+
+function saltarlinea() {
+	document.write("<br>");//Tambien podemos usar funciones como variables para hacer el trabajo mas facil a la hora de modificar nuestro codigo
+	document.write("<br>");
+	document.write("<br>");
+	
+};
+function imprimir(frase){//Podemos crear una funcion para reemplazar la funcion 'document.write' y escribir la palabra imprimir en espanol
+	document.write(frase);
+	saltarlinea();//Podemos usar funciones dentro de otras funciones para evitar escribir tanto codigo
+}
+
+document.write("La eficiencia del carro que usa gasolina es de "+ carrogas+ " klms por cada litro de gasolina");
+document.write(saltolinea);
+document.write("La eficiencia del carro que usa alcohol es de "+ carroalcoh  + " klms por cada litro de aocohol");
+saltarlinea();//Aqui hago uso de la funcion la cual contiene tres saltos de linea
+document.write("Este es mi primer codigo con JavaScript!");
+saltarlinea();
+imprimir("Uso de la funcion imprimir! ");//Aqui hago uso de la funcion imprimir
+//Aqui no uso la funcion o la variable para el salto de linea, porque estoy tomando esa funcion dentro de la funcion 'imprimir' 
+imprimir("Uso de la funcion 'saltarlinea' dentro de la funcion 'imprimir' ");
+
+</script>

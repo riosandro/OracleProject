@@ -1,0 +1,27 @@
+<meta charset="UTF -8">
+
+<script>
+	
+function saltarLinea() {
+	document.write("<br>");
+	document.write("<br>");
+}
+function imprimir(msg) {
+	document.write(msg);
+}
+
+numeroRandom = Math.round(Math.random()*10);
+
+numeroIngresado = parseInt(prompt("Ingrese un numero entre cero y 10: "));
+
+if(numeroIngresado == numeroRandom){
+	imprimir("En hora buena! usted ha acertado! ");
+}
+else{
+	imprimir("Lo centimos no has hacertado! el numero era "+ numeroRandom);
+}
+
+
+
+
+</script>

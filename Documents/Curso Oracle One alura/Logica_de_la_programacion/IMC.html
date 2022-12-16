@@ -1,0 +1,34 @@
+<meta charset="UTF -8">
+<h2>Indice de masa corporal!</h2>
+
+
+
+<script>
+//Esta es una forma de usar las funciones para no escribir tanto en nuestro codigo.
+	function saltarlinea() {
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarlinea();
+	}
+
+	function calcularImc(peso,altura,nombre){
+		imc = peso / (altura**2);
+		imprimir("El Imc de "+ nombre+ " es de "+ Math.round(imc));
+	}
+	calcularImc(70,1.72," Jose ");
+	calcularImc(68,1.68," Ana ");
+	calcularImc(72,1.80," Pedro ");
+	calcularImc(70,1.70," Sandra ");
+	calcularImc(95,1.90," Juan ");
+	calcularImc(65,1.65," Yesica ");
+
+//El siguiente codigo es una opcion para calcular el imc
+/*var peso = 70;
+var altura = 1.72;
+var imc = peso / (altura**2);
+imprimir("Mi indice de masa corporal es "+ Math.round(imc));*/
+
+</script>
